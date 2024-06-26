@@ -41,6 +41,8 @@
 
     // .err { color: $error-fg; 
     //        background-color: $error-bg; } // Error
+    .err { color: $plaintext; 
+           background-color: $background; } // Error
 
     .c   { color: $comment; }           // Comment
     .cd  { color: $comment; }           // Comment Doc

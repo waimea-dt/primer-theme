@@ -10,6 +10,7 @@ body { background-color: $mono2; color: $mono6; }
     hr                      { background-color: $mono3; }
     a                       { color: $blue; }   
     blockquote              { color: $mono5; border-left-color: $mono5; }
+    b, strong               { font-weight: bold; }
 
     &::after {
         content: url(https://avatars.githubusercontent.com/u/130441949?s=80);
