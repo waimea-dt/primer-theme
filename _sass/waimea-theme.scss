@@ -1,0 +1,27 @@
+body { background-color: $mono2; color: $mono6; }
+
+.markdown-body {
+    position: relative;
+
+    h1:first-child          { color: $yellow; border-bottom-color: $yellow; margin-bottom: 1em; }
+    h1:not(:first-child)    { border-bottom: none; }
+    h1, h2                  { border-bottom-color: $mono3; }
+    h2                      { color: $green; }
+    hr                      { background-color: $mono3; }
+    a                       { color: $blue; }   
+    blockquote              { color: $mono5; border-left-color: $mono5; }
+
+    &::after {
+        content: url(https://avatars.githubusercontent.com/u/130441949?s=80);
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+        border: 2px solid $yellow;
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        background-color: $mono1;
+    }
+}
+

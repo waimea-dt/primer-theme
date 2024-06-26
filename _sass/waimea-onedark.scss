@@ -1,0 +1,135 @@
+.highlight {
+    $plaintext:  $mono6  !default;
+    $background: $mono1  !default;
+
+    $string:     $green   !default;
+    $literal:    $orange  !default;
+    $constant:   $orange  !default;
+    $keyword:    $blue    !default;
+    $declare:    $purple  !default;
+    $comment:    $mono4   !default;
+    $processor:  $pink    !default;
+    $namespace:  $purple  !default;
+    $attribute:  $orange  !default;
+    $operator:   $blue    !default;
+    $class:      $yellow  !default;
+    $variable:   $red     !default;
+    $tag:        $red     !default;
+    $function:   $blue    !default;
+    $type:       $orange  !default;
+    $regex:      $cyan    !default;
+    $escape:     $orange  !default;
+    $header:     $blue    !default;
+    $quote:      $mono5   !default;
+    $deleted:    $red     !default;
+    $error-fg:   $mono5   !default;
+    $error-bg:   $red     !default;
+
+    background-color: $background;
+    pre { background-color: $background !important; }
+
+    color: $plaintext;
+
+    table td  { padding: 5px; }
+    table pre { margin: 0; }
+    
+    .k, .kc, .kd, .kp, .nc, .nd, .nf, .nl, .cp, .o { 
+        font-weight: normal; }          // Remove bold
+
+
+    .w   { color: $plaintext; }         // Whitespace
+
+    .err { color: $error-fg; 
+           background-color: $error-bg; } // Error
+
+    .c   { color: $comment; }           // Comment
+    .cd  { color: $comment; }           // Comment Doc
+    .ch  { color: $comment; }           // Comment HashBang
+    .cm  { color: $comment; }           // Comment Multiline
+    .c1  { color: $comment; }           // Comment Single
+    .cs  { color: $comment; }           // Comment Special
+
+    .cp  { color: $processor; }         // Pre-Processor
+    .cpf { color: $processor; }         // Pre-Processor File
+
+    .o   { color: $operator; }          // Operator
+    .ow  { color: $operator; }          // Operator Word
+
+    .p   { color: $plaintext; }         // Punctuation
+    .pi  { color: $plaintext; }         // Punctuation Indicator
+
+    .gi  { color: $string; }            // Generic Inserted
+    .gd  { color: $deleted; }           // Generic Deleted
+
+    .ge  { font-style: italic; }        // Generic Em
+    .gs  { font-weight: bold; }         // Generic Strong
+    .ges { font-style: italic; 
+           font-weight: bold; }         // Generic Em Strong
+    
+    .gh  { color: $header; 
+           font-weight: bold; }         // Generic Heading
+    .gu  { color: $header; }            // Generic Sub-Heading
+    .gt  { color: $quote; }             // Generic Traceback
+    
+    .gr  { color: $error-fg; 
+           background-color: $error-bg; } // Generic Error
+
+    .k   { color: $keyword; }           // Keyword
+    .kn  { color: $namespace; }         // Keyword Namespace
+    .kp  { color: $keyword; }           // Keyword Pseudo
+    .kr  { color: $keyword; }           // Keyword Reserved
+    .kv  { color: $variable; }          // Keyword Variable
+    .kc  { color: $constant; }          // Keyword Constant
+    .kt  { color: $type; }              // Keyword Type
+    .kd  { color: $declare; }           // Keyword Declaration
+
+    .s   { color: $string; }            // String
+    .sa  { color: $string; }            // String Affix
+    .sb  { color: $string; }            // String Backtick
+    .sc  { color: $string; }            // String Char
+    .sd  { color: $string; }            // String Doc
+    .s2  { color: $string; }            // String Double
+    .sh  { color: $string; }            // String Heredoc
+    .s1  { color: $string; }            // String Single
+    .ss  { color: $string; }            // String Symbol
+    .sx  { color: $string; }            // String Other
+    .dl  { color: $string; }            // String Delimiter
+    .sr  { color: $regex; }             // String Regex
+    .si  { color: $escape; }            // String Interpol
+    .se  { color: $escape; }            // String Escape
+
+    .n   { color: $plaintext; }         // Name
+    .nb  { color: $keyword; }           // Name Built-In
+    .bp  { color: $constant; }          // Name Built-In Pseudo
+    .nn  { color: $plaintext; }         // Name Namespace
+    .nc  { color: $class }              // Name Class
+    .nd  { color: $plaintext; }         // Name Decorator
+    .nl  { color: $plaintext; }         // Name Label
+    .nt  { color: $tag; }               // Name Tag
+    .ni  { color: $plaintext; }         // Name Entity
+    .no  { color: $constant; }          // Name Constant
+    .na  { color: $attribute; }         // Name Attribute
+    .py  { color: $attribute; }         // Name Property
+    .nf  { color: $function; }          // Name Function
+    .fm  { color: $function; }          // Name Function Magic
+    .nv  { color: $variable; }          // Name Variable
+    .vc  { color: $variable; }          // Name Variable Class
+    .vg  { color: $variable; }          // Name Variable Global
+    .vi  { color: $variable; }          // Name Variable Instance
+    .vm  { color: $variable; }          // Name Variable Magic
+    .ne  { color: $keyword; }           // Name Exception
+    .nx  { color: $plaintext; }         // Name Other
+
+    .l   { color: $literal; }           // Literal
+    .ld  { color: $literal; }           // Literal Date
+
+    .m   { color: $literal; }           // Number
+    .mf  { color: $literal; }           // Number Float
+    .mh  { color: $literal; }           // Number Hex
+    .mi  { color: $literal; }           // Number Int
+    .mo  { color: $literal; }           // Number Oct
+    .mb  { color: $literal; }           // Number Bin
+    .mx  { color: $literal; }           // Number Other
+    .il  { color: $literal; }           // Number Int Long
+}
+
