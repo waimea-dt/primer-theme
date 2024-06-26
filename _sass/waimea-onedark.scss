@@ -39,8 +39,8 @@
 
     .w   { color: $plaintext; }         // Whitespace
 
-    .err { color: $error-fg; 
-           background-color: $error-bg; } // Error
+    // .err { color: $error-fg; 
+    //        background-color: $error-bg; } // Error
 
     .c   { color: $comment; }           // Comment
     .cd  { color: $comment; }           // Comment Doc
