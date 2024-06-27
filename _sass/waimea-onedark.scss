@@ -1,6 +1,9 @@
-.markdown-body .highlight pre, 
 .markdown-body pre {
-    background-color: $mono1 !important;
+    background-color: transparent;
+}
+
+.markdown-body .highlight pre {
+    background-color: $mono1;
 }
 
 .highlight {
