@@ -3,7 +3,7 @@ body { background-color: $mono2; color: $mono6; }
 .markdown-body {
     position: relative;
 
-    h1:first-child          { color: $yellow; border-bottom-color: $yellow; margin-bottom: 1em; }
+    h1:first-child          { color: $yellow; border-bottom-color: $yellow; margin-bottom: 2em; }
     h1:not(:first-child)    { border-bottom: none; }
     h1, h2                  { border-bottom-color: $mono3; }
     h2                      { color: $green; }
