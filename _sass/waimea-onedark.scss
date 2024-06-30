@@ -1,3 +1,11 @@
+.markdown-body pre {
+    background-color: transparent;
+}
+
+.markdown-body .highlight pre {
+    background-color: $mono1;
+}
+
 .highlight {
     $plaintext:  $mono6  !default;
     $background: $mono1  !default;
@@ -26,7 +34,6 @@
     $error-bg:   $red     !default;
 
     background-color: $background;
-    pre { background-color: $background !important; }
 
     color: $plaintext;
 
