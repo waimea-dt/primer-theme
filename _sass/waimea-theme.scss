@@ -14,8 +14,11 @@ body { background-color: $mono2; color: $mono6; }
     hr                      { background-color: $mono3; }
 
     table                   { 
-                                tr, tr:nth-child(2n)  { background-color: transparent; }
-                                th, td                { border-color: $mono4; } 
+                                tr, tr:nth-child(2n) { 
+                                    background-color: $mono1; 
+                                    &:hover { background-color: $mono3; }
+                                }
+                                th, td { border-color: $mono4; } 
                             }
 
     &::after {
