@@ -10,9 +10,13 @@ body { background-color: $mono2; color: $mono6; }
     h2                      { color: $yellow; border-bottom-color: $mono3; }
     a                       { color: $blue; }   
     b, strong               { font-weight: bold; }
-    table                   { tr, tr:nth-child(2n) { background-color: transparent; } }
     blockquote              { color: $mono5; border-left-color: $mono5; }
     hr                      { background-color: $mono3; }
+
+    table                   { 
+                                tr, tr:nth-child(2n)  { background-color: transparent; }
+                                th, td                { border-color: $mono4; } 
+                            }
 
     &::after {
         content: url(https://avatars.githubusercontent.com/u/130441949?s=80);
